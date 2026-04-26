@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --apush-blue: #1e3a5f;
+  --apush-gold: #c9a227;
+  --apush-red: #8b0000;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #faf8f5;
+}
+
+.btn-primary {
+  @apply bg-apush-blue text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:bg-opacity-90;
+}
+
+.btn-secondary {
+  @apply border-2 border-apush-blue text-apush-blue px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:bg-apush-blue hover:text-white;
+}
+
+.stimulus-box {
+  @apply bg-amber-50 border-l-4 border-apush-gold p-6 my-4 rounded-r-lg;
+}
+
+.question-card {
+  @apply bg-white shadow-md rounded-lg p-6 my-4;
+}
+
+.answer-btn {
+  @apply w-full text-left p-4 border-2 border-gray-200 rounded-lg transition-all duration-200 hover:border-apush-blue hover:bg-blue-50;
+}
+
+.answer-btn.correct {
+  @apply bg-green-100 border-green-500 text-green-800;
+}
+
+.answer-btn.incorrect {
+  @apply bg-red-100 border-red-500 text-red-800;
+}
+
+.answer-btn.selected {
+  @apply border-apush-blue bg-blue-50;
+}
+
+.tag {
+  @apply inline-block px-3 py-1 text-sm rounded-full font-medium;
+}
+
+.tag-period {
+  @apply bg-apush-blue text-white;
+}
+
+.tag-skill {
+  @apply bg-apush-gold text-white;
+}
+
+.tag-topic {
+  @apply bg-gray-200 text-gray-700;
+}
